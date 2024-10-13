@@ -68,16 +68,16 @@ class Grafo:
 
 
 caminho_arquivo = 'num.txt'  
-grafo = Grafo(caminho_arquivo) 
+grafh = Grafo(caminho_arquivo) 
 
-vertice_inicial = grafo.values  
-for vertice in grafo.grafo.keys():  
+vertice_inicial = grafh.values  
+for vertice in grafh.grafo.keys():  
     if vertice != vertice_inicial:
-        distancia = grafo.calcular_numero_de_bacon(vertice_inicial, int(vertice))
+        distancia = grafh.calcular_numero_de_bacon(vertice_inicial, int(vertice))
         if distancia != -1:
             print(f"Distância de {vertice_inicial} a {int(vertice)}: {distancia}\n")
         else:
             print(f"Não há caminho de {vertice_inicial} a {int(vertice)}.\n")
 
 
-grafo.plotar_grafo()
+grafh.plotar_grafo()
